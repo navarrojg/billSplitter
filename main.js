@@ -22,7 +22,8 @@ const countTip = () => {
 			parseFloat(price.value) * parseFloat(tip.value)) /
 		parseInt(people.value);
 	span.textContent = result.toFixed(2);
-	span.style.display = "block";
+	costInfo.style.display = "block";
+	span.style.display = "inline";
 };
 
 btn.addEventListener("click", tipFun);
